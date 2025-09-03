@@ -16,5 +16,5 @@ digraph {
 	FootpathLane -> TravelledWayLane [arrowhead=onormal style=solid]
 	FootpathLane -> Invis [style=invis]
 	Invis -> FootpathSegment [style=invis]
-	FootpathLane -> FootpathSegment [label="«min 1, only»\nonProperty: partwhole:properPartOf" arrowhead=normal style=dashed]
+	FootpathLane -> FootpathSegment [label="«min 1, only» onProperty: partwhole:properPartOf" arrowhead=normal style=dashed]
 }

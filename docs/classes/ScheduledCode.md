@@ -1,16 +1,19 @@
 # ScheduledCode
 
+The operational status of an entity, e.g., open or closed.
+
 ![ScheduledCode Diagram](../diagrams/ScheduledCode.svg)
 
-## Restrictions
+## Formalization
 
-| Property | Restriction Type |
-|----------|------------------|
-| code | All values from code:Code |
-| timeInterval | All values from time:DateTimeInterval |
+| Property | Value Restriction |
+|----------|-------------------|
+| code | only code:Code |
+| rdfs:subClassOf | [ITSThing](ITSThing.md) |
+| timeInterval | exactly 1 time:DateTimeInterval |
+| timeInterval | only time:DateTimeInterval |
 
 ## Other Annotations
 
-- **terms:description**: The operational status of an entity, e.g., open or closed.
-- **xsd:pattern**: TransportNetworkPattern
+- **xsd:pattern**: [TransportNetworkPattern](TransportNetworkPattern.md)
 

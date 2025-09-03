@@ -16,5 +16,5 @@ digraph {
 	TransportAlert -> Alert [arrowhead=onormal style=solid]
 	TransportAlert -> Invis [style=invis]
 	Invis -> NetworkElement [style=invis]
-	TransportAlert -> NetworkElement [label="«only»\nonProperty: affects" arrowhead=normal style=solid]
+	TransportAlert -> NetworkElement [label="«only» affects" arrowhead=normal style=solid]
 }

@@ -16,5 +16,5 @@ digraph {
 	TravelCorridor -> TravelledWay [arrowhead=onormal style=solid]
 	TravelCorridor -> Invis [style=invis]
 	Invis -> TravelCorridorLink [style=invis]
-	TravelCorridor -> TravelCorridorLink [label="«min 1, only»\nonProperty: partwhole:hasProperPart" arrowhead=normal style=dashed]
+	TravelCorridor -> TravelCorridorLink [label="«min 1, only» onProperty: partwhole:hasProperPart" arrowhead=normal style=dashed]
 }

@@ -1,15 +1,18 @@
 # FootpathSection
 
+A FootpathSection is a type of TravelledWaySection that groups FootpathLinks and FootpathSegments for a useful operational purpose.
+
 ![FootpathSection Diagram](../diagrams/FootpathSection.svg)
 
-## Restrictions
+## Formalization
 
-| Property | Restriction Type |
-|----------|------------------|
-| partwhole:properPartOf | All values from FootpathNetwork |
+| Property | Value Restriction |
+|----------|-------------------|
+| partwhole:hasProperPart | only ([FootpathLink](FootpathLink.md) or [FootpathSegment](FootpathSegment.md)) |
+| partwhole:properPartOf | only [FootpathNetwork](FootpathNetwork.md) |
+| rdfs:subClassOf | [TravelledWaySection](TravelledWaySection.md) |
 
 ## Other Annotations
 
-- **terms:description**: A FootpathSection is a type of TravelledWaySection that groups FootpathLinks and FootpathSegments for a useful operational purpose.
-- **xsd:pattern**: PedestrianNetworkPattern
+- **xsd:pattern**: [PedestrianNetworkPattern](PedestrianNetworkPattern.md)
 

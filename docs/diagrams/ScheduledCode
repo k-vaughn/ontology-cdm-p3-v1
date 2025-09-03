@@ -18,6 +18,6 @@ digraph {
 	ScheduledCode -> Invis [style=invis]
 	Invis -> code_Code [style=invis]
 	code_Code -> time_DateTimeInterval [style=invis]
-	ScheduledCode -> code_Code [label="«only»\nonProperty: code" arrowhead=normal style=solid]
-	ScheduledCode -> time_DateTimeInterval [label="«exactly 1, only»\nonProperty: timeInterval" arrowhead=normal style=solid]
+	ScheduledCode -> code_Code [label="«only» code" arrowhead=normal style=solid]
+	ScheduledCode -> time_DateTimeInterval [label="«exactly 1, only» timeInterval" arrowhead=normal style=solid]
 }

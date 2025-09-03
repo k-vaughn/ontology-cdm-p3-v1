@@ -1,8 +1,13 @@
-# PublicTransportSystemPattern
+# Public Transport System Pattern
 
-![PublicTransportSystemPattern Diagram](../diagrams/PublicTransportSystemPattern.svg)
+The public transport system pattern specializes the transport network pattern to address the needs for public transport travel. Whereas the transport network pattern focuses on infrastructure, the public transport system pattern focuses on the operations that rely on the infrastructure provided by the transport networks.
 
-## Other Annotations
+It consists of the following classes:
 
-- **terms:description**: The public transport system pattern specializes the transport network pattern to address the needs for public transport travel. Whereas the transport network pattern focuses on infrastructure, the public transport system pattern focuses on the operations that rely on the infrastructure provided by the transport networks.
-
+- [Group Of Lines](GroupOfLines.md)
+- [Point On Route](PointOnRoute.md)
+- [Public Transport Element](PublicTransportElement.md)
+- [Public Transport Line](PublicTransportLine.md)
+- [Public Transport Route](PublicTransportRoute.md)
+- [Public Transport System](PublicTransportSystem.md)
+- [Route Point](RoutePoint.md)

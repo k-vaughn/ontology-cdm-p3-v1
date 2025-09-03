@@ -1,15 +1,18 @@
 # RailSection
 
+A RailSection is a type of TravelledWaySection that groups TrackLinks and TrackSegments for a useful operational purpose (e.g., assigning a speed limit, designating a traffic control scheme).
+
 ![RailSection Diagram](../diagrams/RailSection.svg)
 
-## Restrictions
+## Formalization
 
-| Property | Restriction Type |
-|----------|------------------|
-| partwhole:properPartOf | All values from RailNetwork |
+| Property | Value Restriction |
+|----------|-------------------|
+| partwhole:hasProperPart | only ([TrackLink](TrackLink.md) or [TrackSegment](TrackSegment.md)) |
+| partwhole:properPartOf | only [RailNetwork](RailNetwork.md) |
+| rdfs:subClassOf | [TravelledWaySection](TravelledWaySection.md) |
 
 ## Other Annotations
 
-- **terms:description**: A RailSection is a type of TravelledWaySection that groups TrackLinks and TrackSegments for a useful operational purpose (e.g., assigning a speed limit, designating a traffic control scheme).
-- **xsd:pattern**: RailNetworkPattern
+- **xsd:pattern**: [RailNetworkPattern](RailNetworkPattern.md)
 

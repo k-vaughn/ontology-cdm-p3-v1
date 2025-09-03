@@ -16,5 +16,5 @@ digraph {
 	TravelledWayLane -> NetworkElement [arrowhead=onormal style=solid]
 	TravelledWayLane -> Invis [style=invis]
 	Invis -> TravelledWaySegment [style=invis]
-	TravelledWayLane -> TravelledWaySegment [label="«min 1, only»\nonProperty: partwhole:properPartOf" arrowhead=normal style=dashed]
+	TravelledWayLane -> TravelledWaySegment [label="«min 1, only» onProperty: partwhole:properPartOf" arrowhead=normal style=dashed]
 }

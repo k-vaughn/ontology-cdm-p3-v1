@@ -20,7 +20,7 @@ digraph {
 	Invis -> PointOnRoute [style=invis]
 	PointOnRoute -> PublicTransportLine [style=invis]
 	PublicTransportLine -> code_Code [style=invis]
-	PublicTransportRoute -> code_Code [label="«min 1, only»\nonProperty: direction" arrowhead=normal style=solid]
-	PublicTransportRoute -> PointOnRoute [label="«min 2, only»\nonProperty: points" arrowhead=normal style=solid]
-	PublicTransportRoute -> PublicTransportLine [label="«min 1, only»\nonProperty: partwhole:properPartOf" arrowhead=normal style=solid]
+	PublicTransportRoute -> code_Code [label="«min 1, only» direction" arrowhead=normal style=solid]
+	PublicTransportRoute -> PointOnRoute [label="«min 2, only» points" arrowhead=normal style=solid]
+	PublicTransportRoute -> PublicTransportLine [label="«min 1, only» partwhole:properPartOf" arrowhead=normal style=solid]
 }

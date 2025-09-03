@@ -25,6 +25,6 @@ digraph {
 	Union_partwhole_hasProperPart -> MicromobilityLink [label=member arrowhead=normal style=dotted]
 	MicromobilityPathSegment [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER"><B>MicromobilityPathSegment</B></TD></TR></TABLE>> margin=0]
 	Union_partwhole_hasProperPart -> MicromobilityPathSegment [label=member arrowhead=normal style=dotted]
-	MicromobilityPathSection -> Union_partwhole_hasProperPart [label="«only»\nonProperty: partwhole:hasProperPart" arrowhead=normal style=dashed]
-	MicromobilityPathSection -> MicromobilityNetwork [label="«only»\nonProperty: partwhole:properPartOf" arrowhead=normal style=dashed]
+	MicromobilityPathSection -> Union_partwhole_hasProperPart [label="«only» onProperty: partwhole:hasProperPart" arrowhead=normal style=dashed]
+	MicromobilityPathSection -> MicromobilityNetwork [label="«only» onProperty: partwhole:properPartOf" arrowhead=normal style=dashed]
 }

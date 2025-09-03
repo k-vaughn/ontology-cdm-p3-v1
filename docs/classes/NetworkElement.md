@@ -1,19 +1,23 @@
 # NetworkElement
 
+A NetworkElement represents any element of a transport network. It can be a part of another NetworkElement and can be decomposed into smaller NetworkElements.
+
 ![NetworkElement Diagram](../diagrams/NetworkElement.svg)
 
-## Restrictions
+## Formalization
 
-| Property | Restriction Type |
-|----------|------------------|
-| genProp:hasIdentifier | All values from xsd:string |
-| partwhole:hasProperPart | All values from NetworkElement |
-| partwhole:properPartOf | All values from NetworkElement |
-| status | All values from ScheduledCode |
+| Property | Value Restriction |
+|----------|-------------------|
+| genProp:hasIdentifier | exactly 1 xsd:string |
+| genProp:hasIdentifier | only xsd:string |
+| partwhole:hasProperPart | only [NetworkElement](NetworkElement.md) |
+| partwhole:properPartOf | only [NetworkElement](NetworkElement.md) |
+| rdfs:subClassOf | [ITSThing](ITSThing.md) |
+| rdfs:subClassOf | geo:Feature |
+| status | only [ScheduledCode](ScheduledCode.md) |
 
 ## Other Annotations
 
 - **protege:abstract**: true
-- **terms:description**: A NetworkElement represents any element of a transport network. It can be a part of another NetworkElement and can be decomposed into smaller NetworkElements.
-- **xsd:pattern**: TransportNetworkPattern
+- **xsd:pattern**: [TransportNetworkPattern](TransportNetworkPattern.md)
 

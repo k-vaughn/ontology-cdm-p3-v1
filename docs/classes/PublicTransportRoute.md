@@ -1,18 +1,24 @@
 # PublicTransportRoute
 
+A PublicTransportRoute represents one specific path used by a public transport vehicle to transport passengers to and from designated locations.
+
+NOTE: For example, a PublicTransportLine might use an alternate PublicTransportRoute to reach its next stop during periods of congestion.
+
 ![PublicTransportRoute Diagram](../diagrams/PublicTransportRoute.svg)
 
-## Restrictions
+## Formalization
 
-| Property | Restriction Type |
-|----------|------------------|
-| direction | All values from code:Code |
-| partwhole:properPartOf | All values from PublicTransportLine |
-| points | All values from PointOnRoute |
+| Property | Value Restriction |
+|----------|-------------------|
+| direction | min 1 code:Code |
+| direction | only code:Code |
+| partwhole:properPartOf | min 1 [PublicTransportLine](PublicTransportLine.md) |
+| partwhole:properPartOf | only [PublicTransportLine](PublicTransportLine.md) |
+| points | min 2 [PointOnRoute](PointOnRoute.md) |
+| points | only [PointOnRoute](PointOnRoute.md) |
+| rdfs:subClassOf | [PublicTransportElement](PublicTransportElement.md) |
 
 ## Other Annotations
 
-- **skos:note**: For example, a PublicTransportLine might use an alternate PublicTransportRoute to reach its next stop during periods of congestion.
-- **terms:description**: A PublicTransportRoute represents one specific path used by a public transport vehicle to transport passengers to and from designated locations.
-- **xsd:pattern**: PublicTransportSystemPattern
+- **xsd:pattern**: [PublicTransportSystemPattern](PublicTransportSystemPattern.md)
 

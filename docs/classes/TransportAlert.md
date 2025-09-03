@@ -1,15 +1,17 @@
 # TransportAlert
 
+A TransportAlert is a type of alert that can be used to notify people of important transport information.
+
 ![TransportAlert Diagram](../diagrams/TransportAlert.svg)
 
-## Restrictions
+## Formalization
 
-| Property | Restriction Type |
-|----------|------------------|
-| affects | All values from NetworkElement |
+| Property | Value Restriction |
+|----------|-------------------|
+| affects | only [NetworkElement](NetworkElement.md) |
+| rdfs:subClassOf | [Alert](Alert.md) |
 
 ## Other Annotations
 
-- **terms:description**: A TransportAlert is a type of alert that can be used to notify people of important transport information.
-- **xsd:pattern**: TransportAlertPattern
+- **xsd:pattern**: [TransportAlertPattern](TransportAlertPattern.md)
 

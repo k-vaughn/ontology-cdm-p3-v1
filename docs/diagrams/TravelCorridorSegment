@@ -16,6 +16,6 @@ digraph {
 	TravelCorridorSegment -> TravelledWaySegment [arrowhead=onormal style=solid]
 	TravelCorridorSegment -> Invis [style=invis]
 	Invis -> TravelCorridorLink [style=invis]
-	TravelCorridorSegment -> TravelledWaySegment [label="«min 1, only»\nonProperty: corridorElement" arrowhead=normal style=solid]
-	TravelCorridorSegment -> TravelCorridorLink [label="«only»\nonProperty: partwhole:properPartOf" arrowhead=normal style=dashed]
+	TravelCorridorSegment -> TravelledWaySegment [label="«min 1, only» corridorElement" arrowhead=normal style=solid]
+	TravelCorridorSegment -> TravelCorridorLink [label="«only» onProperty: partwhole:properPartOf" arrowhead=normal style=dashed]
 }

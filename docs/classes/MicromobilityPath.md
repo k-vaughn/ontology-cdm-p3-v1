@@ -1,16 +1,19 @@
 # MicromobilityPath
 
+A MicromobilityPath is a type of Road that is made up of MicromobilityPathLinks.
+
 ![MicromobilityPath Diagram](../diagrams/MicromobilityPath.svg)
 
-## Restrictions
+## Formalization
 
-| Property | Restriction Type |
-|----------|------------------|
-| partwhole:hasProperPart | All values from MicromobilityLink |
-| partwhole:properPartOf | All values from MicromobilityNetwork |
+| Property | Value Restriction |
+|----------|-------------------|
+| partwhole:hasProperPart | min 1 [MicromobilityLink](MicromobilityLink.md) |
+| partwhole:hasProperPart | only [MicromobilityLink](MicromobilityLink.md) |
+| partwhole:properPartOf | only [MicromobilityNetwork](MicromobilityNetwork.md) |
+| rdfs:subClassOf | [Road](Road.md) |
 
 ## Other Annotations
 
-- **terms:description**: A MicromobilityPath is a type of Road that is made up of MicromobilityPathLinks.
-- **xsd:pattern**: MicromobilityNetworkPattern
+- **xsd:pattern**: [MicromobilityNetworkPattern](MicromobilityNetworkPattern.md)
 

@@ -18,7 +18,7 @@ digraph {
 	TransportNode -> Invis [style=invis]
 	Invis -> TransportNetwork [style=invis]
 	TransportNetwork -> TravelledWayLink [style=invis]
-	TransportNode -> TravelledWayLink [label="«min 1, only»\nonProperty: egress" arrowhead=normal style=solid]
-	TransportNode -> TravelledWayLink [label="«min 1, only»\nonProperty: ingress" arrowhead=normal style=solid]
-	TransportNode -> TransportNetwork [label="«min 1, only»\nonProperty: partwhole:properPartOf" arrowhead=normal style=dashed]
+	TransportNode -> TravelledWayLink [label="«min 1, only» egress" arrowhead=normal style=solid]
+	TransportNode -> TravelledWayLink [label="«min 1, only» ingress" arrowhead=normal style=solid]
+	TransportNode -> TransportNetwork [label="«min 1, only» onProperty: partwhole:properPartOf" arrowhead=normal style=dashed]
 }

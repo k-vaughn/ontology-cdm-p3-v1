@@ -33,6 +33,6 @@ digraph {
 	Union_partwhole_hasProperPart -> TravelledWayLink [label=member arrowhead=normal style=dotted]
 	TravelledWaySection [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER"><B>TravelledWaySection</B></TD></TR></TABLE>> margin=0]
 	Union_partwhole_hasProperPart -> TravelledWaySection [label=member arrowhead=normal style=dotted]
-	TransportNetwork -> Union_partwhole_hasProperPart [label="«only»\nonProperty: partwhole:hasProperPart" arrowhead=normal style=dashed]
-	TransportNetwork -> TransportNetwork [label="«only»\nonProperty: partwhole:properPartOf" arrowhead=normal style=dashed]
+	TransportNetwork -> Union_partwhole_hasProperPart [label="«only» onProperty: partwhole:hasProperPart" arrowhead=normal style=dashed]
+	TransportNetwork -> TransportNetwork [label="«only» onProperty: partwhole:properPartOf" arrowhead=normal style=dashed]
 }

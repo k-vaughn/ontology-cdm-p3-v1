@@ -18,6 +18,6 @@ digraph {
 	RailCorridor -> Invis [style=invis]
 	Invis -> RailNetwork [style=invis]
 	RailNetwork -> TrackLink [style=invis]
-	RailCorridor -> TrackLink [label="«min 1, only»\nonProperty: partwhole:hasProperPart" arrowhead=normal style=dashed]
-	RailCorridor -> RailNetwork [label="«only»\nonProperty: partwhole:properPartOf" arrowhead=normal style=dashed]
+	RailCorridor -> TrackLink [label="«min 1, only» onProperty: partwhole:hasProperPart" arrowhead=normal style=dashed]
+	RailCorridor -> RailNetwork [label="«only» onProperty: partwhole:properPartOf" arrowhead=normal style=dashed]
 }

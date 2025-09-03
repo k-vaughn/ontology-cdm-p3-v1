@@ -16,7 +16,7 @@ digraph {
 	RoadLane -> TravelledWayLane [arrowhead=onormal style=solid]
 	RoadLane -> Invis [style=invis]
 	Invis -> RoadSegment [style=invis]
-	RoadLane -> RoadLane [label="«only»\nonProperty: next" arrowhead=normal style=solid]
-	RoadLane -> RoadLane [label="«only»\nonProperty: previous" arrowhead=normal style=solid]
-	RoadLane -> RoadSegment [label="«min 1, only»\nonProperty: partwhole:properPartOf" arrowhead=normal style=dashed]
+	RoadLane -> RoadLane [label="«only» next" arrowhead=normal style=solid]
+	RoadLane -> RoadLane [label="«only» previous" arrowhead=normal style=solid]
+	RoadLane -> RoadSegment [label="«min 1, only» onProperty: partwhole:properPartOf" arrowhead=normal style=dashed]
 }

@@ -1,17 +1,18 @@
 # TrackLink
 
-Due to the nature of rail, each TrackLink consists of a single lane, but multiple TrackLinks can exist along the same RailCorridor.
+A TrackLink is a type of TravelledWayLink that uses rails on a stabilized base.
 
 ![TrackLink Diagram](../diagrams/TrackLink.svg)
 
-## Restrictions
+## Formalization
 
-| Property | Restriction Type |
-|----------|------------------|
-| partwhole:hasProperPart | All values from TrackSegment |
+| Property | Value Restriction |
+|----------|-------------------|
+| partwhole:hasProperPart | only [TrackSegment](TrackSegment.md) |
+| partwhole:properPartOf | only ([RailCorridor](RailCorridor.md) or [RailNetwork](RailNetwork.md) or [RailSection](RailSection.md)) |
+| rdfs:subClassOf | [TravelledWayLink](TravelledWayLink.md) |
 
 ## Other Annotations
 
-- **terms:description**: A TrackLink is a type of TravelledWayLink that uses rails on a stabilized base.
-- **xsd:pattern**: RailNetworkPattern
+- **xsd:pattern**: [RailNetworkPattern](RailNetworkPattern.md)
 

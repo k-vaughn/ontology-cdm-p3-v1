@@ -1,16 +1,19 @@
 # RailCorridor
 
+A RailCorridor is a type of TravelledWay that is made up of TrackLinks.
+
 ![RailCorridor Diagram](../diagrams/RailCorridor.svg)
 
-## Restrictions
+## Formalization
 
-| Property | Restriction Type |
-|----------|------------------|
-| partwhole:hasProperPart | All values from TrackLink |
-| partwhole:properPartOf | All values from RailNetwork |
+| Property | Value Restriction |
+|----------|-------------------|
+| partwhole:hasProperPart | min 1 [TrackLink](TrackLink.md) |
+| partwhole:hasProperPart | only [TrackLink](TrackLink.md) |
+| partwhole:properPartOf | only [RailNetwork](RailNetwork.md) |
+| rdfs:subClassOf | [TravelledWay](TravelledWay.md) |
 
 ## Other Annotations
 
-- **terms:description**: A RailCorridor is a type of TravelledWay that is made up of TrackLinks.
-- **xsd:pattern**: RailNetworkPattern
+- **xsd:pattern**: [RailNetworkPattern](RailNetworkPattern.md)
 

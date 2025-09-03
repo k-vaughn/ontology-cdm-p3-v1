@@ -1,15 +1,18 @@
 # RoadSection
 
+A RoadSection is a type of TravelledWaySection that groups RoadLinks and RoadSegments for a useful operational purpose (e.g., assigning a speed limit, designating a traffic control scheme).
+
 ![RoadSection Diagram](../diagrams/RoadSection.svg)
 
-## Restrictions
+## Formalization
 
-| Property | Restriction Type |
-|----------|------------------|
-| partwhole:properPartOf | All values from RoadNetwork |
+| Property | Value Restriction |
+|----------|-------------------|
+| partwhole:hasProperPart | only ([RoadLink](RoadLink.md) or [RoadSegment](RoadSegment.md)) |
+| partwhole:properPartOf | only [RoadNetwork](RoadNetwork.md) |
+| rdfs:subClassOf | [TravelledWaySection](TravelledWaySection.md) |
 
 ## Other Annotations
 
-- **terms:description**: A RoadSection is a type of TravelledWaySection that groups RoadLinks and RoadSegments for a useful operational purpose (e.g., assigning a speed limit, designating a traffic control scheme).
-- **xsd:pattern**: RoadNetworkPattern
+- **xsd:pattern**: [RoadNetworkPattern](RoadNetworkPattern.md)
 

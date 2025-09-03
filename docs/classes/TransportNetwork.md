@@ -1,15 +1,18 @@
 # TransportNetwork
 
+A TransportNetwork is a NetworkElement that is a collection of other network elements that jointly represent a network of paths along which entities (e.g., vehicles, pedestrians) of a specified mode can operate.
+
 ![TransportNetwork Diagram](../diagrams/TransportNetwork.svg)
 
-## Restrictions
+## Formalization
 
-| Property | Restriction Type |
-|----------|------------------|
-| partwhole:properPartOf | All values from TransportNetwork |
+| Property | Value Restriction |
+|----------|-------------------|
+| partwhole:hasProperPart | only ([TransportNetwork](TransportNetwork.md) or [TransportNode](TransportNode.md) or [TravelledWay](TravelledWay.md) or [TravelledWayLink](TravelledWayLink.md) or [TravelledWaySection](TravelledWaySection.md)) |
+| partwhole:properPartOf | only [TransportNetwork](TransportNetwork.md) |
+| rdfs:subClassOf | [NetworkElement](NetworkElement.md) |
 
 ## Other Annotations
 
-- **terms:description**: A TransportNetwork is a NetworkElement that is a collection of other network elements that jointly represent a network of paths along which entities (e.g., vehicles, pedestrians) of a specified mode can operate.
-- **xsd:pattern**: TransportNetworkPattern
+- **xsd:pattern**: [TransportNetworkPattern](TransportNetworkPattern.md)
 

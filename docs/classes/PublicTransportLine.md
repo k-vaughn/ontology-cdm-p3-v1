@@ -1,16 +1,21 @@
 # PublicTransportLine
 
+A PublicTransportLine is one or more routes used by public transport vehicles to transport passengers to and from designated locations.
+
 ![PublicTransportLine Diagram](../diagrams/PublicTransportLine.svg)
 
-## Restrictions
+## Formalization
 
-| Property | Restriction Type |
-|----------|------------------|
-| allowedDirections | All values from code:Code |
-| partwhole:hasProperPart | All values from PublicTransportRoute |
+| Property | Value Restriction |
+|----------|-------------------|
+| allowedDirections | min 1 code:Code |
+| allowedDirections | only code:Code |
+| partwhole:hasProperPart | min 1 [PublicTransportRoute](PublicTransportRoute.md) |
+| partwhole:hasProperPart | only [PublicTransportRoute](PublicTransportRoute.md) |
+| partwhole:properPartOf | only ([GroupOfLines](GroupOfLines.md) or [PublicTransportSystem](PublicTransportSystem.md)) |
+| rdfs:subClassOf | [PublicTransportElement](PublicTransportElement.md) |
 
 ## Other Annotations
 
-- **terms:description**: A PublicTransportLine is one or more routes used by public transport vehicles to transport passengers to and from designated locations.
-- **xsd:pattern**: PublicTransportSystemPattern
+- **xsd:pattern**: [PublicTransportSystemPattern](PublicTransportSystemPattern.md)
 

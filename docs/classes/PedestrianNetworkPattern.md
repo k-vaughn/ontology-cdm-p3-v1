@@ -1,8 +1,12 @@
-# PedestrianNetworkPattern
+# Pedestrian Network Pattern
 
-![PedestrianNetworkPattern Diagram](../diagrams/PedestrianNetworkPattern.svg)
+The pedestrian network pattern specializes the transport network pattern to address the needs for pedestrian travel.
 
-## Other Annotations
+It consists of the following classes:
 
-- **terms:description**: The pedestrian network pattern specializes the transport network pattern to address the needs for pedestrian travel.
-
+- [Footpath](Footpath.md)
+- [Footpath Lane](FootpathLane.md)
+- [Footpath Link](FootpathLink.md)
+- [Footpath Network](FootpathNetwork.md)
+- [Footpath Section](FootpathSection.md)
+- [Footpath Segment](FootpathSegment.md)

@@ -27,6 +27,6 @@ digraph {
 	Union_partwhole_hasProperPart -> RoadLink [label=member arrowhead=normal style=dotted]
 	RoadSection [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER"><B>RoadSection</B></TD></TR></TABLE>> margin=0]
 	Union_partwhole_hasProperPart -> RoadSection [label=member arrowhead=normal style=dotted]
-	RoadNetwork -> Union_partwhole_hasProperPart [label="«only»\nonProperty: partwhole:hasProperPart" arrowhead=normal style=dashed]
-	RoadNetwork -> RoadLink [label="«min 1»\nonProperty: partwhole:hasProperPart" arrowhead=normal style=dashed]
+	RoadNetwork -> Union_partwhole_hasProperPart [label="«only» onProperty: partwhole:hasProperPart" arrowhead=normal style=dashed]
+	RoadNetwork -> RoadLink [label="«min 1» onProperty: partwhole:hasProperPart" arrowhead=normal style=dashed]
 }

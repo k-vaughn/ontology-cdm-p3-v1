@@ -1,16 +1,20 @@
 # Road
 
+A Road is a type of TravelledWay and transinfras:Road that is made up of RoadLinks. Roads form a proper part of RoadNetworks.
+
 ![Road Diagram](../diagrams/Road.svg)
 
-## Restrictions
+## Formalization
 
-| Property | Restriction Type |
-|----------|------------------|
-| partwhole:hasProperPart | All values from RoadLink |
-| partwhole:properPartOf | All values from RoadNetwork |
+| Property | Value Restriction |
+|----------|-------------------|
+| partwhole:hasProperPart | min 1 [RoadLink](RoadLink.md) |
+| partwhole:hasProperPart | only [RoadLink](RoadLink.md) |
+| partwhole:properPartOf | only [RoadNetwork](RoadNetwork.md) |
+| rdfs:subClassOf | [TravelledWay](TravelledWay.md) |
+| rdfs:subClassOf | transinfras:[Road](Road.md) |
 
 ## Other Annotations
 
-- **terms:description**: A Road is a type of TravelledWay and transinfras:Road that is made up of RoadLinks. Roads form a proper part of RoadNetworks.
-- **xsd:pattern**: RoadNetworkPattern
+- **xsd:pattern**: [RoadNetworkPattern](RoadNetworkPattern.md)
 

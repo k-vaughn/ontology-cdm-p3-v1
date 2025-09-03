@@ -15,5 +15,4 @@ digraph {
 	}
 	RoutePoint -> PublicTransportElement [arrowhead=onormal style=solid]
 	RoutePoint -> TransportNode [arrowhead=onormal style=solid]
-	RoutePoint -> Invis [style=invis]
 }

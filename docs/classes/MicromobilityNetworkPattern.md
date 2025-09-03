@@ -1,8 +1,12 @@
-# MicromobilityNetworkPattern
+# Micromobility Network Pattern
 
-![MicromobilityNetworkPattern Diagram](../diagrams/MicromobilityNetworkPattern.svg)
+The micromobility network pattern specializes the road network pattern to address the needs for the travel of micromobility vehicles.
 
-## Other Annotations
+It consists of the following classes:
 
-- **terms:description**: The micromobility network pattern specializes the road network pattern to address the needs for the travel of micromobility vehicles.
-
+- [Micromobility Lane](MicromobilityLane.md)
+- [Micromobility Link](MicromobilityLink.md)
+- [Micromobility Network](MicromobilityNetwork.md)
+- [Micromobility Path](MicromobilityPath.md)
+- [Micromobility Path Section](MicromobilityPathSection.md)
+- [Micromobility Path Segment](MicromobilityPathSegment.md)

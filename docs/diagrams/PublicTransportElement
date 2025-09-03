@@ -13,5 +13,4 @@ digraph {
 		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
 	}
 	PublicTransportElement -> ITSThing [arrowhead=onormal style=solid]
-	PublicTransportElement -> Invis [style=invis]
 }

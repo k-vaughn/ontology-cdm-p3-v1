@@ -1,16 +1,20 @@
 # TravelCorridor
 
+A TravelCorridor is a type of TravelledWay that is made up of TravelCorridorLinks.
+
+NOTE: The extent of a TravelCorridor is defined by the extent of the path that shares the designator assigned to the TravelCorridor.
+
 ![TravelCorridor Diagram](../diagrams/TravelCorridor.svg)
 
-## Restrictions
+## Formalization
 
-| Property | Restriction Type |
-|----------|------------------|
-| partwhole:hasProperPart | All values from TravelCorridorLink |
+| Property | Value Restriction |
+|----------|-------------------|
+| partwhole:hasProperPart | min 1 [TravelCorridorLink](TravelCorridorLink.md) |
+| partwhole:hasProperPart | only [TravelCorridorLink](TravelCorridorLink.md) |
+| rdfs:subClassOf | [TravelledWay](TravelledWay.md) |
 
 ## Other Annotations
 
-- **skos:note**: The extent of a TravelCorridor is defined by the extent of the path that shares the designator assigned to the TravelCorridor.
-- **terms:description**: A TravelCorridor is a type of TravelledWay that is made up of TravelCorridorLinks.
-- **xsd:pattern**: TravelCorridorPattern
+- **xsd:pattern**: [TravelCorridorPattern](TravelCorridorPattern.md)
 

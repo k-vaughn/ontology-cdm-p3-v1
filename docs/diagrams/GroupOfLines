@@ -18,6 +18,6 @@ digraph {
 	GroupOfLines -> Invis [style=invis]
 	Invis -> PublicTransportLine [style=invis]
 	PublicTransportLine -> PublicTransportSystem [style=invis]
-	GroupOfLines -> PublicTransportLine [label="«min 1, only»\nonProperty: partwhole:hasProperPart" arrowhead=normal style=solid]
-	GroupOfLines -> PublicTransportSystem [label="«only»\nonProperty: partwhole:properPartOf" arrowhead=normal style=solid]
+	GroupOfLines -> PublicTransportLine [label="«min 1, only» partwhole:hasProperPart" arrowhead=normal style=solid]
+	GroupOfLines -> PublicTransportSystem [label="«only» partwhole:properPartOf" arrowhead=normal style=solid]
 }

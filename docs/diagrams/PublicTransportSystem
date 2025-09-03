@@ -23,5 +23,5 @@ digraph {
 	Union_partwhole_hasProperPart -> GroupOfLines [label=member arrowhead=normal style=dotted]
 	PublicTransportLine [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER"><B>PublicTransportLine</B></TD></TR></TABLE>> margin=0]
 	Union_partwhole_hasProperPart -> PublicTransportLine [label=member arrowhead=normal style=dotted]
-	PublicTransportSystem -> Union_partwhole_hasProperPart [label="«only»\nonProperty: partwhole:hasProperPart" arrowhead=normal style=solid]
+	PublicTransportSystem -> Union_partwhole_hasProperPart [label="«only» partwhole:hasProperPart" arrowhead=normal style=solid]
 }

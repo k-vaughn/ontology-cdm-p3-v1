@@ -1,15 +1,19 @@
 # FootpathLink
 
+A Footpath Link is a type of TravelledWayLink designed for pedestrians.
+
 ![FootpathLink Diagram](../diagrams/FootpathLink.svg)
 
-## Restrictions
+## Formalization
 
-| Property | Restriction Type |
-|----------|------------------|
-| partwhole:hasProperPart | All values from FootpathSegment |
+| Property | Value Restriction |
+|----------|-------------------|
+| partwhole:hasProperPart | min 1 [FootpathSegment](FootpathSegment.md) |
+| partwhole:hasProperPart | only [FootpathSegment](FootpathSegment.md) |
+| partwhole:properPartOf | only ([Footpath](Footpath.md) or [FootpathNetwork](FootpathNetwork.md) or [FootpathSection](FootpathSection.md)) |
+| rdfs:subClassOf | [TravelledWayLink](TravelledWayLink.md) |
 
 ## Other Annotations
 
-- **terms:description**: A Footpath Link is a type of TravelledWayLink designed for pedestrians.
-- **xsd:pattern**: PedestrianNetworkPattern
+- **xsd:pattern**: [PedestrianNetworkPattern](PedestrianNetworkPattern.md)
 

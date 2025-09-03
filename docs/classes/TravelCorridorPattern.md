@@ -1,8 +1,9 @@
-# TravelCorridorPattern
+# Travel Corridor Pattern
 
-![TravelCorridorPattern Diagram](../diagrams/TravelCorridorPattern.svg)
+The travel corridor pattern specializes the transport network pattern to address the needs for a more holistic travel view.
 
-## Other Annotations
+It consists of the following classes:
 
-- **terms:description**: The travel corridor pattern specializes the transport network pattern to address the needs for a more holistic travel view.
-
+- [Travel Corridor](TravelCorridor.md)
+- [Travel Corridor Link](TravelCorridorLink.md)
+- [Travel Corridor Segment](TravelCorridorSegment.md)

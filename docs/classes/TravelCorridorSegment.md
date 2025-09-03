@@ -1,16 +1,19 @@
 # TravelCorridorSegment
 
+A TravelCorridorSegment is a type of TravelledWaySegment that logically groups multiple TravelledWaySegments together as being co-located or side-by-side.
+
 ![TravelCorridorSegment Diagram](../diagrams/TravelCorridorSegment.svg)
 
-## Restrictions
+## Formalization
 
-| Property | Restriction Type |
-|----------|------------------|
-| corridorElement | All values from TravelledWaySegment |
-| partwhole:properPartOf | All values from TravelCorridorLink |
+| Property | Value Restriction |
+|----------|-------------------|
+| corridorElement | min 1 [TravelledWaySegment](TravelledWaySegment.md) |
+| corridorElement | only [TravelledWaySegment](TravelledWaySegment.md) |
+| partwhole:properPartOf | only [TravelCorridorLink](TravelCorridorLink.md) |
+| rdfs:subClassOf | [TravelledWaySegment](TravelledWaySegment.md) |
 
 ## Other Annotations
 
-- **terms:description**: A TravelCorridorSegment is a type of TravelledWaySegment that logically groups multiple TravelledWaySegments together as being co-located or side-by-side.
-- **xsd:pattern**: TravelCorridorPattern
+- **xsd:pattern**: [TravelCorridorPattern](TravelCorridorPattern.md)
 

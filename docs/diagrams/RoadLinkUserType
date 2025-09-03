@@ -22,8 +22,8 @@ digraph {
 	RoadLink -> cityunits_Duration [style=invis]
 	cityunits_Duration -> cityunits_Speed [style=invis]
 	cityunits_Speed -> code_Code [style=invis]
-	RoadLinkUserType -> cityunits_Speed [label="«max 1, only»\nonProperty: speedLimit" arrowhead=normal style=solid]
-	RoadLinkUserType -> cityunits_Duration [label="«max 1, only»\nonProperty: travelTime" arrowhead=normal style=solid]
-	RoadLinkUserType -> code_Code [label="«exactly 1, only»\nonProperty: userCategory" arrowhead=normal style=solid]
-	RoadLinkUserType -> RoadLink [label="«only»\nonProperty: uses" arrowhead=normal style=solid]
+	RoadLinkUserType -> cityunits_Speed [label="«max 1, only» speedLimit" arrowhead=normal style=solid]
+	RoadLinkUserType -> cityunits_Duration [label="«max 1, only» travelTime" arrowhead=normal style=solid]
+	RoadLinkUserType -> code_Code [label="«exactly 1, only» userCategory" arrowhead=normal style=solid]
+	RoadLinkUserType -> RoadLink [label="«only» uses" arrowhead=normal style=solid]
 }

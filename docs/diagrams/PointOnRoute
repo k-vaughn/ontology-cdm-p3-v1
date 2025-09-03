@@ -18,6 +18,6 @@ digraph {
 	PointOnRoute -> Invis [style=invis]
 	Invis -> RoutePoint [style=invis]
 	RoutePoint -> code_Code [style=invis]
-	PointOnRoute -> RoutePoint [label="«exactly 1, only»\nonProperty: point" arrowhead=normal style=solid]
-	PointOnRoute -> code_Code [label="«only»\nonProperty: routePointType" arrowhead=normal style=solid]
+	PointOnRoute -> RoutePoint [label="«exactly 1, only» point" arrowhead=normal style=solid]
+	PointOnRoute -> code_Code [label="«only» routePointType" arrowhead=normal style=solid]
 }

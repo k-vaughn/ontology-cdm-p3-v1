@@ -18,6 +18,6 @@ digraph {
 	MicromobilityPath -> Invis [style=invis]
 	Invis -> MicromobilityLink [style=invis]
 	MicromobilityLink -> MicromobilityNetwork [style=invis]
-	MicromobilityPath -> MicromobilityLink [label="«min 1, only»\nonProperty: partwhole:hasProperPart" arrowhead=normal style=dashed]
-	MicromobilityPath -> MicromobilityNetwork [label="«only»\nonProperty: partwhole:properPartOf" arrowhead=normal style=dashed]
+	MicromobilityPath -> MicromobilityLink [label="«min 1, only» onProperty: partwhole:hasProperPart" arrowhead=normal style=dashed]
+	MicromobilityPath -> MicromobilityNetwork [label="«only» onProperty: partwhole:properPartOf" arrowhead=normal style=dashed]
 }

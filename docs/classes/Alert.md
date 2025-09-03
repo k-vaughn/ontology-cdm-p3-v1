@@ -1,36 +1,51 @@
 # Alert
 
+An Alert can be used to notify people of important information.
+
 ![Alert Diagram](../diagrams/Alert.svg)
 
-## Restrictions
+## Formalization
 
-| Property | Restriction Type |
-|----------|------------------|
-| activities | All values from activity:Activity |
-| beginTime | All values from time:Instant |
-| category | All values from code:Code |
-| cause | All values from code:Code |
-| certainty | All values from code:Code |
-| creationTime | All values from time:Instant |
-| distribution | All values from code:Code |
-| effect | All values from code:Code |
-| endTime | All values from time:Instant |
-| expiryTime | All values from time:Instant |
-| genProp:hasDescription | All values from xsd:string |
-| headline | All values from xsd:string |
-| issuer | All values from xsd:nonNegativeInteger |
-| lastUpdateTime | All values from time:Instant |
-| location | All values from geo:Geometry |
-| recommendation | All values from code:Code |
-| referencedAlert | All values from Alert |
-| resources | All values from xsd:anyURI |
-| severity | All values from code:Code |
-| status | All values from code:Code |
-| urgency | All values from code:Code |
-| website | All values from xsd:anyURI |
+| Property | Value Restriction |
+|----------|-------------------|
+| activities | only activity:Activity |
+| beginTime | max 1 time:Instant |
+| beginTime | only time:Instant |
+| category | exactly 1 code:Code |
+| category | only code:Code |
+| cause | only code:Code |
+| certainty | max 1 code:Code |
+| certainty | only code:Code |
+| creationTime | exactly 1 time:Instant |
+| creationTime | only time:Instant |
+| distribution | exactly 1 code:Code |
+| distribution | only code:Code |
+| effect | only code:Code |
+| endTime | max 1 time:Instant |
+| endTime | only time:Instant |
+| expiryTime | only time:Instant |
+| genProp:hasDescription | exactly 1 xsd:string |
+| genProp:hasDescription | only xsd:string |
+| headline | exactly 1 xsd:string |
+| headline | only xsd:string |
+| issuer | exactly 1 xsd:nonNegativeInteger |
+| issuer | only xsd:nonNegativeInteger |
+| lastUpdateTime | exactly 1 time:Instant |
+| lastUpdateTime | only time:Instant |
+| location | only geo:Geometry |
+| rdfs:subClassOf | [ITSThing](ITSThing.md) |
+| recommendation | only code:Code |
+| referencedAlert | only [Alert](Alert.md) |
+| resources | only xsd:anyURI |
+| severity | max 1 code:Code |
+| severity | only code:Code |
+| status | exactly 1 code:Code |
+| status | only code:Code |
+| urgency | max 1 code:Code |
+| urgency | only code:Code |
+| website | only xsd:anyURI |
 
 ## Other Annotations
 
-- **terms:description**: An Alert can be used to notify people of important information.
-- **xsd:pattern**: TransportAlertPattern
+- **xsd:pattern**: [TransportAlertPattern](TransportAlertPattern.md)
 

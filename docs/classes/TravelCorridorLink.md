@@ -1,16 +1,19 @@
 # TravelCorridorLink
 
+A TravelCorridorLink is a type of TravelledWayLink that is made up of TravelCorridorSegments.
+
 ![TravelCorridorLink Diagram](../diagrams/TravelCorridorLink.svg)
 
-## Restrictions
+## Formalization
 
-| Property | Restriction Type |
-|----------|------------------|
-| partwhole:hasProperPart | All values from TravelCorridorSegment |
-| partwhole:properPartOf | All values from TravelCorridor |
+| Property | Value Restriction |
+|----------|-------------------|
+| partwhole:hasProperPart | min 1 [TravelCorridorSegment](TravelCorridorSegment.md) |
+| partwhole:hasProperPart | only [TravelCorridorSegment](TravelCorridorSegment.md) |
+| partwhole:properPartOf | only [TravelCorridor](TravelCorridor.md) |
+| rdfs:subClassOf | [TravelledWayLink](TravelledWayLink.md) |
 
 ## Other Annotations
 
-- **terms:description**: A TravelCorridorLink is a type of TravelledWayLink that is made up of TravelCorridorSegments.
-- **xsd:pattern**: TravelCorridorPattern
+- **xsd:pattern**: [TravelCorridorPattern](TravelCorridorPattern.md)
 

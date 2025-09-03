@@ -1,15 +1,18 @@
 # MicromobilityLane
 
+A MicromobilityLane is a type of RoadLane that forms part of a MicromobilityPathSegment.
+
 ![MicromobilityLane Diagram](../diagrams/MicromobilityLane.svg)
 
-## Restrictions
+## Formalization
 
-| Property | Restriction Type |
-|----------|------------------|
-| partwhole:properPartOf | All values from MicromobilityPathSegment |
+| Property | Value Restriction |
+|----------|-------------------|
+| partwhole:properPartOf | min 1 [MicromobilityPathSegment](MicromobilityPathSegment.md) |
+| partwhole:properPartOf | only [MicromobilityPathSegment](MicromobilityPathSegment.md) |
+| rdfs:subClassOf | [RoadLane](RoadLane.md) |
 
 ## Other Annotations
 
-- **terms:description**: A MicromobilityLane is a type of RoadLane that forms part of a MicromobilityPathSegment.
-- **xsd:pattern**: MicromobilityNetworkPattern
+- **xsd:pattern**: [MicromobilityNetworkPattern](MicromobilityNetworkPattern.md)
 

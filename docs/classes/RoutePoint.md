@@ -1,16 +1,21 @@
 # RoutePoint
 
+A RoutePoint represents a point of interest along a PublicTransportRoute.
+
 ![RoutePoint Diagram](../diagrams/RoutePoint.svg)
 
-## Restrictions
+## Formalization
 
-| Property | Restriction Type |
-|----------|------------------|
-| isBorderCrossing | All values from xsd:boolean |
-| isViaPoint | All values from xsd:boolean |
+| Property | Value Restriction |
+|----------|-------------------|
+| isBorderCrossing | exactly 1 xsd:boolean |
+| isBorderCrossing | only xsd:boolean |
+| isViaPoint | max 1 xsd:boolean |
+| isViaPoint | only xsd:boolean |
+| rdfs:subClassOf | [PublicTransportElement](PublicTransportElement.md) |
+| rdfs:subClassOf | [TransportNode](TransportNode.md) |
 
 ## Other Annotations
 
-- **terms:description**: A RoutePoint represents a point of interest along a PublicTransportRoute.
-- **xsd:pattern**: PublicTransportSystemPattern
+- **xsd:pattern**: [PublicTransportSystemPattern](PublicTransportSystemPattern.md)
 

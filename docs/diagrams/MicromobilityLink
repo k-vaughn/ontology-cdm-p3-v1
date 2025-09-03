@@ -22,7 +22,7 @@ digraph {
 	MicromobilityNetwork -> MicromobilityPath [style=invis]
 	MicromobilityPath -> MicromobilityPathSection [style=invis]
 	MicromobilityPathSection -> MicromobilityPathSegment [style=invis]
-	MicromobilityLink -> MicromobilityPathSegment [label="«min 1, only»\nonProperty: partwhole:hasProperPart" arrowhead=normal style=dashed]
+	MicromobilityLink -> MicromobilityPathSegment [label="«min 1, only» onProperty: partwhole:hasProperPart" arrowhead=normal style=dashed]
 	Union_partwhole_properPartOf [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1" BGCOLOR="lightyellow"><TR><TD ALIGN="CENTER">«unionOf»<BR/>[MicromobilityNetwork or MicromobilityPath or MicromobilityPathSection]</TD></TR></TABLE>> margin=0]
 	MicromobilityNetwork [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER"><B>MicromobilityNetwork</B></TD></TR></TABLE>> margin=0]
 	Union_partwhole_properPartOf -> MicromobilityNetwork [label=member arrowhead=normal style=dotted]
@@ -30,5 +30,5 @@ digraph {
 	Union_partwhole_properPartOf -> MicromobilityPath [label=member arrowhead=normal style=dotted]
 	MicromobilityPathSection [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER"><B>MicromobilityPathSection</B></TD></TR></TABLE>> margin=0]
 	Union_partwhole_properPartOf -> MicromobilityPathSection [label=member arrowhead=normal style=dotted]
-	MicromobilityLink -> Union_partwhole_properPartOf [label="«only»\nonProperty: partwhole:properPartOf" arrowhead=normal style=dashed]
+	MicromobilityLink -> Union_partwhole_properPartOf [label="«only» onProperty: partwhole:properPartOf" arrowhead=normal style=dashed]
 }

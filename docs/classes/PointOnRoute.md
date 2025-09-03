@@ -1,17 +1,21 @@
 # PointOnRoute
 
+A PointOnRoute represents an ordered RoutePoint for a PublicTransportRoute.
+
 ![PointOnRoute Diagram](../diagrams/PointOnRoute.svg)
 
-## Restrictions
+## Formalization
 
-| Property | Restriction Type |
-|----------|------------------|
-| index | All values from xsd:integer |
-| point | All values from RoutePoint |
-| routePointType | All values from code:Code |
+| Property | Value Restriction |
+|----------|-------------------|
+| index | exactly 1 xsd:integer |
+| index | only xsd:integer |
+| point | exactly 1 [RoutePoint](RoutePoint.md) |
+| point | only [RoutePoint](RoutePoint.md) |
+| rdfs:subClassOf | [PublicTransportElement](PublicTransportElement.md) |
+| routePointType | only code:Code |
 
 ## Other Annotations
 
-- **terms:description**: A PointOnRoute represents an ordered RoutePoint for a PublicTransportRoute.
-- **xsd:pattern**: PublicTransportSystemPattern
+- **xsd:pattern**: [PublicTransportSystemPattern](PublicTransportSystemPattern.md)
 

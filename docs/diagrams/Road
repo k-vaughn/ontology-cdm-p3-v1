@@ -20,6 +20,6 @@ digraph {
 	Road -> Invis [style=invis]
 	Invis -> RoadLink [style=invis]
 	RoadLink -> RoadNetwork [style=invis]
-	Road -> RoadLink [label="«min 1, only»\nonProperty: partwhole:hasProperPart" arrowhead=normal style=dashed]
-	Road -> RoadNetwork [label="«only»\nonProperty: partwhole:properPartOf" arrowhead=normal style=dashed]
+	Road -> RoadLink [label="«min 1, only» onProperty: partwhole:hasProperPart" arrowhead=normal style=dashed]
+	Road -> RoadNetwork [label="«only» onProperty: partwhole:properPartOf" arrowhead=normal style=dashed]
 }

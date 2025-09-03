@@ -1,20 +1,27 @@
 # RoadLink
 
+A RoadLink is a type of TravelledWayLink and transinfras:RoadLink using a stabilized base designed for the movement of vehicles that conform to a specified set of requirements but may be used by others as well.
+
 ![RoadLink Diagram](../diagrams/RoadLink.svg)
 
-## Restrictions
+## Formalization
 
-| Property | Restriction Type |
-|----------|------------------|
-| capacity | All values from xsd:nonNegativeInteger |
-| maxLanes | All values from xsd:nonNegativeInteger |
-| partwhole:hasProperPart | All values from RoadSegment |
-| primaryUser | All values from RoadLinkUserType |
-| travelTime | All values from cityunits:Duration |
-| usedBy | All values from RoadLinkUserType |
+| Property | Value Restriction |
+|----------|-------------------|
+| capacity | exactly 1 xsd:nonNegativeInteger |
+| capacity | only xsd:nonNegativeInteger |
+| maxLanes | exactly 1 xsd:nonNegativeInteger |
+| maxLanes | only xsd:nonNegativeInteger |
+| partwhole:hasProperPart | only [RoadSegment](RoadSegment.md) |
+| partwhole:properPartOf | only ([Road](Road.md) or [RoadNetwork](RoadNetwork.md) or [RoadSection](RoadSection.md)) |
+| primaryUser | only [RoadLinkUserType](RoadLinkUserType.md) |
+| rdfs:subClassOf | [TravelledWayLink](TravelledWayLink.md) |
+| rdfs:subClassOf | transinfras:[RoadLink](RoadLink.md) |
+| travelTime | max 1 cityunits:Duration |
+| travelTime | only cityunits:Duration |
+| usedBy | only [RoadLinkUserType](RoadLinkUserType.md) |
 
 ## Other Annotations
 
-- **terms:description**: A RoadLink is a type of TravelledWayLink and transinfras:RoadLink using a stabilized base designed for the movement of vehicles that conform to a specified set of requirements but may be used by others as well.
-- **xsd:pattern**: RoadNetworkPattern
+- **xsd:pattern**: [RoadNetworkPattern](RoadNetworkPattern.md)
 

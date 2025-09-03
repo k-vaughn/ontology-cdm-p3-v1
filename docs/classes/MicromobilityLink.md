@@ -1,15 +1,19 @@
 # MicromobilityLink
 
+A MicromobilityLink is a type of RoadLink designed for micromobility vehicles.
+
 ![MicromobilityLink Diagram](../diagrams/MicromobilityLink.svg)
 
-## Restrictions
+## Formalization
 
-| Property | Restriction Type |
-|----------|------------------|
-| partwhole:hasProperPart | All values from MicromobilityPathSegment |
+| Property | Value Restriction |
+|----------|-------------------|
+| partwhole:hasProperPart | min 1 [MicromobilityPathSegment](MicromobilityPathSegment.md) |
+| partwhole:hasProperPart | only [MicromobilityPathSegment](MicromobilityPathSegment.md) |
+| partwhole:properPartOf | only ([MicromobilityNetwork](MicromobilityNetwork.md) or [MicromobilityPath](MicromobilityPath.md) or [MicromobilityPathSection](MicromobilityPathSection.md)) |
+| rdfs:subClassOf | [RoadLink](RoadLink.md) |
 
 ## Other Annotations
 
-- **terms:description**: A MicromobilityLink is a type of RoadLink designed for micromobility vehicles.
-- **xsd:pattern**: MicromobilityNetworkPattern
+- **xsd:pattern**: [MicromobilityNetworkPattern](MicromobilityNetworkPattern.md)
 

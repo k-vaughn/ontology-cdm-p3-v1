@@ -18,6 +18,6 @@ digraph {
 	Footpath -> Invis [style=invis]
 	Invis -> FootpathLink [style=invis]
 	FootpathLink -> FootpathNetwork [style=invis]
-	Footpath -> FootpathLink [label="«min 1, only»\nonProperty: partwhole:hasProperPart" arrowhead=normal style=dashed]
-	Footpath -> FootpathNetwork [label="«only»\nonProperty: partwhole:properPartOf" arrowhead=normal style=dashed]
+	Footpath -> FootpathLink [label="«min 1, only» onProperty: partwhole:hasProperPart" arrowhead=normal style=dashed]
+	Footpath -> FootpathNetwork [label="«only» onProperty: partwhole:properPartOf" arrowhead=normal style=dashed]
 }

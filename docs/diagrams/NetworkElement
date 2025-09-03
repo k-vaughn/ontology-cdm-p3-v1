@@ -18,7 +18,7 @@ digraph {
 	NetworkElement -> geo_Feature [arrowhead=onormal style=solid]
 	NetworkElement -> Invis [style=invis]
 	Invis -> ScheduledCode [style=invis]
-	NetworkElement -> ScheduledCode [label="«only»\nonProperty: status" arrowhead=normal style=solid]
-	NetworkElement -> NetworkElement [label="«only»\nonProperty: partwhole:hasProperPart" arrowhead=normal style=solid]
-	NetworkElement -> NetworkElement [label="«only»\nonProperty: partwhole:properPartOf" arrowhead=normal style=solid]
+	NetworkElement -> ScheduledCode [label="«only» status" arrowhead=normal style=solid]
+	NetworkElement -> NetworkElement [label="«only» partwhole:hasProperPart" arrowhead=normal style=solid]
+	NetworkElement -> NetworkElement [label="«only» partwhole:properPartOf" arrowhead=normal style=solid]
 }

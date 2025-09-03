@@ -16,5 +16,5 @@ digraph {
 	MicromobilityLane -> RoadLane [arrowhead=onormal style=solid]
 	MicromobilityLane -> Invis [style=invis]
 	Invis -> MicromobilityPathSegment [style=invis]
-	MicromobilityLane -> MicromobilityPathSegment [label="«min 1, only»\nonProperty: partwhole:properPartOf" arrowhead=normal style=dashed]
+	MicromobilityLane -> MicromobilityPathSegment [label="«min 1, only» onProperty: partwhole:properPartOf" arrowhead=normal style=dashed]
 }

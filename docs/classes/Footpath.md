@@ -1,16 +1,19 @@
 # Footpath
 
+A Footpath is a type of TravelledWay that is made up of FootpathLinks.
+
 ![Footpath Diagram](../diagrams/Footpath.svg)
 
-## Restrictions
+## Formalization
 
-| Property | Restriction Type |
-|----------|------------------|
-| partwhole:hasProperPart | All values from FootpathLink |
-| partwhole:properPartOf | All values from FootpathNetwork |
+| Property | Value Restriction |
+|----------|-------------------|
+| partwhole:hasProperPart | min 1 [FootpathLink](FootpathLink.md) |
+| partwhole:hasProperPart | only [FootpathLink](FootpathLink.md) |
+| partwhole:properPartOf | only [FootpathNetwork](FootpathNetwork.md) |
+| rdfs:subClassOf | [TravelledWay](TravelledWay.md) |
 
 ## Other Annotations
 
-- **terms:description**: A Footpath is a type of TravelledWay that is made up of FootpathLinks.
-- **xsd:pattern**: PedestrianNetworkPattern
+- **xsd:pattern**: [PedestrianNetworkPattern](PedestrianNetworkPattern.md)
 

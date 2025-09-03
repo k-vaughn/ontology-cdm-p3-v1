@@ -1,15 +1,21 @@
-# Management of Electronic Traffic Regulations - Ontology
+# City Data Model - Transport
 
-This site provides the ontology used by the Management of Electronic Traffic Regulations (METR) standards series (ISO 24315) and specifically referenced by the METR Data Requirements (ISO 24315-8).
+This ontology defines service-level concepts for the transport domain using concepts specified in ISO/IEC 5087-1 and ISO/IEC-5087-2. The values for service-level concepts defined by this site are intended to be managed by the transport domain but accessible by multiple city services and stakeholders.
 
-The ontology defined herein follow the rules defined by ISO 25965.
+This ontology consists of the following patterns:
 
-The METR ontology consists of the following patterns:
+- [Micromobility Network Pattern](classes/MicromobilityNetworkPattern.md)
+- [Pedestrian Network Pattern](classes/PedestrianNetworkPattern.md)
+- [Public Transport System Pattern](classes/PublicTransportSystemPattern.md)
+- [Rail Network Pattern](classes/RailNetworkPattern.md)
+- [Road Network Pattern](classes/RoadNetworkPattern.md)
+- [Transport Alert Pattern](classes/TransportAlertPattern.md)
+- [Transport Network Pattern](classes/TransportNetworkPattern.md)
+- [Travel Corridor Pattern](classes/TravelCorridorPattern.md)
 
-- [Traffic Regulation Order Pattern](tro.md)
+The ontology also contains the following classes that are not assigned to any pattern:
 
-The formal definition of these patterns is available in [Ontology File Notation](metr.ofn) as shown below:
+- [ITS Pattern](classes/ITSPattern.md)
+- [ITS Thing](classes/ITSThing.md)
 
-```ofn
---8<-- "metr.ofn"
-```
+The formal definition of these patterns is available in [OWL Functional Notation](transportnetwork.ofn).

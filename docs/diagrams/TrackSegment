@@ -23,6 +23,6 @@ digraph {
 	Union_partwhole_properPartOf -> RailSection [label=member arrowhead=normal style=dotted]
 	TrackLink [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER"><B>TrackLink</B></TD></TR></TABLE>> margin=0]
 	Union_partwhole_properPartOf -> TrackLink [label=member arrowhead=normal style=dotted]
-	TrackSegment -> Union_partwhole_properPartOf [label="«only»\nonProperty: partwhole:properPartOf" arrowhead=normal style=dashed]
-	TrackSegment -> TrackLink [label="«exactly 1»\nonProperty: partwhole:properPartOf" arrowhead=normal style=dashed]
+	TrackSegment -> Union_partwhole_properPartOf [label="«only» onProperty: partwhole:properPartOf" arrowhead=normal style=dashed]
+	TrackSegment -> TrackLink [label="«exactly 1» onProperty: partwhole:properPartOf" arrowhead=normal style=dashed]
 }

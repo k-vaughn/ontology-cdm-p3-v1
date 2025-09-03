@@ -1,17 +1,20 @@
 # MicromobilityPathSegment
 
-A MicromobilityPathSegment can be defined to be a part of a MicromobilityPathSection, especially when the MicromobilityPathSection does not span an entire MicromobilityLink.
+A MicromobilityPathSegment is a type of RoadSegment that represents a portion of a MicromobilityLink with common physical characteristics.
 
 ![MicromobilityPathSegment Diagram](../diagrams/MicromobilityPathSegment.svg)
 
-## Restrictions
+## Formalization
 
-| Property | Restriction Type |
-|----------|------------------|
-| partwhole:hasProperPart | All values from MicromobilityLane |
+| Property | Value Restriction |
+|----------|-------------------|
+| partwhole:hasProperPart | min 1 [MicromobilityLane](MicromobilityLane.md) |
+| partwhole:hasProperPart | only [MicromobilityLane](MicromobilityLane.md) |
+| partwhole:properPartOf | min 1 [MicromobilityLink](MicromobilityLink.md) |
+| partwhole:properPartOf | only ([MicromobilityLink](MicromobilityLink.md) or [MicromobilityPathSection](MicromobilityPathSection.md)) |
+| rdfs:subClassOf | [RoadSegment](RoadSegment.md) |
 
 ## Other Annotations
 
-- **terms:description**: A MicromobilityPathSegment is a type of RoadSegment that represents a portion of a MicromobilityLink with common physical characteristics.
-- **xsd:pattern**: MicromobilityNetworkPattern
+- **xsd:pattern**: [MicromobilityNetworkPattern](MicromobilityNetworkPattern.md)
 
