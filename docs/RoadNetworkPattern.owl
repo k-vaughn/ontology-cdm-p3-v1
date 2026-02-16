@@ -270,7 +270,7 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/citydata/part3/v1/width"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="https://w3id.org/citydata/part1/v1/Length"/>
+                <owl:onClass rdf:resource="https://w3id.org/citydata/part1/v1/Length"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -306,7 +306,7 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/citydata/part3/v1/capacity"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="https://w3id.org/citydata/part3/v1/VehicleFlowRate"/>
+                <owl:onClass rdf:resource="https://w3id.org/citydata/part3/v1/VehicleFlowRate"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -490,7 +490,7 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/citydata/part3/v1/width"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="https://w3id.org/citydata/part1/v1/Length"/>
+                <owl:onClass rdf:resource="https://w3id.org/citydata/part1/v1/Length"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
