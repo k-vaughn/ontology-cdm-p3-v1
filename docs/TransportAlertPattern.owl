@@ -38,7 +38,7 @@
         
         <!-- Imports -->
         <owl:imports rdf:resource="https://w3id.org/citydata/part2/v1/AlertPattern/"/>
-        <owl:imports rdf:resource="https://w3id.org/citydata/part2/v1/TransportNetworkPattern/"/>
+        <owl:imports rdf:resource="https://w3id.org/citydata/part3/v1/TransportNetworkPattern/"/>
     </owl:Ontology>
 
 
